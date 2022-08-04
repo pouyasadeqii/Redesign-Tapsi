@@ -5,41 +5,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
-   integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
-   crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
-   integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
-   crossorigin=""></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+      integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+      integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+      crossorigin=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Tap30</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="nav container">
-        <a href="#">
-          <img src="assets/images/logo.svg" alt="logo">
-        </a>
-        <div class="nav__toggler">
-          <div class="bar bar-one"></div>
-          <div class="bar bar-two"></div>
-          <div class="bar bar-three"></div>
+    <section class="services container">
+      <h2 class="services__title">سرویس های تپسی</h2>
+      <div class="services__tabs">
+          <a
+            class="tab"
+            id="nav-classic-tab"
+          >
+            <img
+              src="https://tapsi.ir/images/home/cc-classic.png"
+              aria-label="classic service icon"
+              alt="tapsi-classic-icon"
+            />
+            <p>تپسی کلاسیک</p>
+          </a>
+          <a
+            class="tab"
+            id="nav-tel-tab""
+          >
+            <img
+              src="https://tapsi.ir/images/home/cc-tel.png"
+              aria-label="tel service icon"
+              alt="tapsi-tel-icon"
+            />
+            <p>تپسی تلفنی</p>
+          </a>
+          <a
+            class="tab"
+            id="nav-line-tab"
+          >
+            <img
+              src="https://tapsi.ir/images/home/cc-line.png"
+              aria-label="line service icon"
+              alt="tapsi-line-icon"
+            />
+            <p>تپسی لاین</p>
+          </a>
+          <a
+            class="tab active"
+            id="nav-motopeyk-tab"
+          >
+            <img
+              src="https://tapsi.ir/images/home/cc-motopeyk.png"
+              aria-label="motopeyk service icon"
+              alt="motopeyk-icon"
+            />
+            <p>موتوپیک</p>
+          </a>
+          <a
+            class="tab"
+            id="nav-autopeyk-tab"
+          >
+            <img
+              src="https://tapsi.ir/images/home/cc-autopeyk.png"
+              aria-label="autopeyk service icon"
+              alt="autopeyk-icon"
+            />
+            <p>اتوپیک</p>
+          </a>
+          <a
+            class="tab"
+            id="nav-plus-tab"
+          >
+            <img
+              src="https://tapsi.ir/images/home/cc-plus.png"
+              aria-label="plus service icon"
+              alt="tapsi-plus-icon"
+            />
+            <p>تپسی پلاس</p>
+          </a>
+          <a
+            class="tab"
+            id="nav-taxi-tab"
+          >
+            <img
+              src="https://tapsi.ir/images/home/cc-taxi.png"
+              aria-label="taxi service icon"
+              alt="tapsi-taxi-icon"
+            />
+            <p>تاکسی</p>
+          </a>
+          <a
+            class="tab"
+            id="nav-hamyar-tab"
+          >
+            <img
+              src="https://tapsi.ir/images/home/cc-hamyar.png"
+              aria-label="hamyar service icon"
+              alt="hamyar-icon"
+            />
+            <p>همیار</p>
+          </a>
+      </div>
+      <div class="feature container">
+        <div class="feature__image">
+          <img src="assets/images/i-mac-1.png" alt="i mac image">
         </div>
-        <ul class="list nav__list">
-          <li class="nav__item"><a href="#">پشتیبانی</a></li>
-          <li class="nav__item"><a href="#">خدمات کسب و کارها</a></li>
-          <li class="nav__item"><a href="#">فرصت های شغلی</a></li>
-          <li class="nav__item"><a href="#">وبلاگ</a></li>
-          <li class="nav__item cta"><a href="#" class="btn btn--primary">دانلود تپسی</a></li>
-        </ul>
-      </nav>
-    </header>
-
-
-
-
-
-
-
+        <div class="feature__detail">
+          <h3 class="feature__title">خدمات تپسی برای کسب و کار ها</h3>
+          <p class="feature__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+            harum sit doloremque aliquam corrupti libero voluptatum nostrum
+            eveniet explicabo repellendus sequi repellat, odit laborum tempore
+            ducimus aut, eaque incidunt nobis?
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- <script src="js/map.js"></script> -->
     <script src="js/main.js"></script>
