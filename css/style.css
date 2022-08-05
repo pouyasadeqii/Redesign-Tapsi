@@ -742,31 +742,48 @@ input,textarea {
 
 .services .feature__title {
    margin-bottom: 1.5rem 0;
-}
+  }   
 .services .feature__image {
-  display: none;
+    display: none;
+}  
+.tab-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+.feature__detail {
+  width: 100%;
+}
+
 @media screen and (min-width:1024px) {
   .services__tabs .tab > p {
     margin-top: 1rem;
     font-size: 1.4rem;
-  }
+  }  
   .services__tabs img {
     width: 100%;
-  }
+  }  
   .services__title {
     font-size: 3.5rem;
     margin-bottom: 3rem;
-  }
+  }  
   .services .feature__image {
     display: block;
+  }  
+  .feature__detail {
+    width: 50%;
   }
-}
-
+}  
 
 .tab-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: none;
 }
+
+.tab-content.active {
+  display: flex;
+}
+.tab.active {
+  opacity: 1;
+}
+
 
