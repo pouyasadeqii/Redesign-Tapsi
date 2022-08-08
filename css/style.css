@@ -5,7 +5,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* list-style: none; */
 }
 
 /* root variable */
@@ -18,7 +17,7 @@
   --color-headings: #000;
   --color-body: #333333;
   --color-white: #fff;
-  --avatar-size: 50px;
+  --avatar-size: 5rem;
 }
 
 html {
@@ -138,14 +137,6 @@ h2 {
   margin-left: 2rem;
 }
 
-/* .list--tick .list__item::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background: url(/assets/images/Tick-Square.svg) no-repeat;
-  padding-right: 2rem;
-} */
-
 .list--tick .list__item {
   background: url(/assets/images/Tick-Square.svg) no-repeat;
   background-position: right center;
@@ -226,9 +217,6 @@ h2 {
   font-size: 1.4rem;
 }
 @media screen and (min-width: 1024px) {
-  /* .block-plan {
-    grid-template-columns: repeat(3, 1fr);
-  } */
   .plan .btn--block {
     font-size: 1.8rem;
   }
@@ -265,9 +253,6 @@ h2 {
   width: 90%;
   justify-self: flex-end;
   margin-bottom: 2rem;
-}
-.charge {
-  margin-top: 8rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -316,6 +301,9 @@ h2 {
   .contact-us__map {
     grid-area: map;
     display: block;
+    width: 100%;
+    height: 300px;
+    border-radius: 1rem;
   }
   .contact-us__icons {
     grid-area: address;
@@ -409,11 +397,11 @@ h2 {
   }
 }
 
-.contact-us__map  {
+.contact-us__map img {
+  height: 100%;
   width: 100%;
-  height: 32rem;
   border-radius: 10px;
-
+  overflow: hidden;
 }
 
 .form-wrapper {
@@ -421,7 +409,6 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   padding: 1rem;
-
 }
 .form-wrapper h3 {
   margin-bottom: 5.2rem;
@@ -438,7 +425,6 @@ textarea {
   display: block;
   outline: 0;
   border: 0;
-  font-family: "vazir";
 }
 textarea {
   resize: none;
@@ -753,6 +739,9 @@ textarea {
   }
 }
 
+.services__tabs::-webkit-scrollbar {
+  display: none;
+}
 .services__tabs {
   display: flex;
   flex-direction: row;
@@ -789,9 +778,6 @@ textarea {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 20px;
-}
-.services {
-  margin-top: 5rem;
 }
 
 .services .feature__title {
@@ -857,10 +843,6 @@ textarea {
 }
 .block-heading {
   margin-top: 6rem;
-}
-.hr {
-  margin: 6.5rem 0;
-  opacity: 0.3;
 }
 
 /*  TRAVELL SECTION */
@@ -948,7 +930,6 @@ textarea {
   cursor: pointer;
   padding: 2rem 2rem;
   border-bottom: 2px solid #ececec;
-  /* background-color: gold; */
 }
 
 .accordion__heading {
